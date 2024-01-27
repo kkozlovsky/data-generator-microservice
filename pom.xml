@@ -12,7 +12,7 @@
     <artifactId>data-generator-microservice</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>data-generator-microservice</name>
-    <description>data-generator-microservice</description>
+    <description>Data generator microservice</description>
 
     <properties>
         <java.version>21</java.version>
