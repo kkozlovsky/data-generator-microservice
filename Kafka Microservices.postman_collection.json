@@ -39,6 +39,41 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "http://localhost:8081/api/v1/data/test/send",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"delayInSeconds\": 1,\n\t\"measurementTypes\": [\n\t\t\"TEMPERATURE\",\n\t\t\"POWER\",\n\t\t\"VOLTAGE\"\n\t]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/api/v1/data/test/send",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"v1",
+						"data",
+						"test",
+						"send"
+					]
+				}
+			},
+			"response": []
 		}
 	]
 }
