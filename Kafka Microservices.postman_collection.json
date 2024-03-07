@@ -74,6 +74,96 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "http://localhost:8083/api/v1/analytics/summary/1?mt=POWER&mt=VOLTAGE&st=AVG",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"delayInSeconds\": 1,\n\t\"measurementTypes\": [\n\t\t\"TEMPERATURE\",\n\t\t\"POWER\",\n\t\t\"VOLTAGE\"\n\t]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8083/api/v1/analytics/summary/1?mt=POWER&mt=VOLTAGE&st=AVG",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8083",
+					"path": [
+						"api",
+						"v1",
+						"analytics",
+						"summary",
+						"1"
+					],
+					"query": [
+						{
+							"key": "mt",
+							"value": "POWER"
+						},
+						{
+							"key": "mt",
+							"value": "VOLTAGE"
+						},
+						{
+							"key": "st",
+							"value": "AVG"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8083/api/v1/analytics/summary/1",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"delayInSeconds\": 1,\n\t\"measurementTypes\": [\n\t\t\"TEMPERATURE\",\n\t\t\"POWER\",\n\t\t\"VOLTAGE\"\n\t]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8083/api/v1/analytics/summary/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8083",
+					"path": [
+						"api",
+						"v1",
+						"analytics",
+						"summary",
+						"1"
+					]
+				}
+			},
+			"response": []
 		}
 	]
 }
